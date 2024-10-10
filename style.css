@@ -1,0 +1,147 @@
+
+
+.header .navbar {
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  
+}
+
+
+.circle {
+  content: "";
+  width: 350px;
+  height: 350px;
+ 
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(36,11,0,1) 0%, rgba(121,9,43,1) 35%, rgba(255,0,215,1) 100%);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.img-phone {
+width: 250px; ;
+position: relative;
+
+}
+
+.circle::before {
+  content: "🧜🏽‍♀️";
+  font-size: 50px;
+  position:absolute;
+  left: -20px;
+  bottom: 0;
+  rotate: -20deg;
+}
+ .circle::after {
+  content: "👑";
+  font-size: 50px;
+  position:absolute;
+  right: -30px;
+  top: -10px;
+  rotate: 20deg;
+}
+
+
+.testimonial-container {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+}
+
+.featcircle {
+  content: "";
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.phone{
+  position: relative;
+  bottom: 0px;
+ right: 0px;
+ left: 0;
+ top: 0px;
+ width: auto;
+ height: 400px;
+
+}
+
+.featcircle::before {
+  content: "🧜🏽‍♀️";
+  font-size: 50px;
+  position:absolute;
+  left: -20px;
+  bottom: 0;
+  rotate: -20deg;
+}
+ .featcircle::after {
+  content: "👑";
+  font-size: 50px;
+  position:absolute;
+  right: -30px;
+  top: -10px;
+  rotate: 20deg;
+}   
+
+.icon-color{
+    color: rgb(255, 47, 95);
+}
+
+.div-call{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.call-bg{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/space.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.div-app {
+  background: linear-gradient(90deg, rgba(154,180,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.footer-container{
+
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+
+.modal-header{
+  background: linear-gradient(90deg, rgba(154,180,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.modal-footer .btn{
+  width: 100% !important;
+
+}
+
+@media (max-width: 768px) {
+  .circle, .featcircle {
+    
+  display: none !important;
+  }
+}
+

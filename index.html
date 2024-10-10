@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPHONE</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar p-1 navbar-expand-lg bg-light shadow-lg">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand fw-bolder" href="/index.html">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav  text-black-50 ms-auto d-flex justify-content-between">
+                        <li class="nav-item p-2">
+                            <a class="nav-link active" aria-current="page" href="#Features">Features</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="#Download">Download</a>
+                        </li>
+
+
+                        <!--AYSEL HOCAM MERHABA MODAL BÖLÜMÜ ARADA TUTUKLUK YAPIYOR.
+ UMARIM SİZDEYKEN YAPMAZ. DONUK AÇILIYOR GİBİ OLUYOR BAZEN bu sebeple appscript bağlama aşamasını kontrol edemedim-->
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary p-1" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="bi bi-person-hearts"></i>
+                            Send Feedback
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-4" id="exampleModalLabel">Send Feedback</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <form
+                                        action="https://script.google.com/macros/s/AKfycbxfCTNuhRPYenJyK1SpEy7B2785Odf7bWo8CHElkar97hbAi9Gfm0eMglds2mwI3ISU/exec"
+                                        method="post">
+                                        <div class="modal-body">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="name" name="fullname"
+                                                    placeholder="Full Name">
+                                                <label for="name">Full Name</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" name="email" id="email"
+                                                    placeholder="Email Address">
+                                                <label for="email"> Email Address</label>
+                                            </div>
+                                            <div class="form-floating">
+                                                <input type="number" class="form-control" name="phone" id="phone"
+                                                    placeholder="Number">
+                                                <label for="phone">Phone Numbers</label>
+                                            </div>
+                                            <div class="form-floating mt-3">
+                                                <textarea class="form-control" name="comment"
+                                                    placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                                <label for="floatingTextarea">Comments</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="modal-footer  col-12">
+                                                <button type="button"
+                                                    class="btn  rounded-pill btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--HERO-->
+
+
+        <div class="hero-container mt-5 px-5 py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 text-center text-lg-start ">
+                        <h1 class="fw-light display-2">
+                            Showcase your app beautifully.
+                        </h1>
+                        <p>
+                            Launch your mobile app landing page faster with this free, open source theme from Start
+                            Bootstrap!
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-lg-auto mt-3">
+                                <a href="/">
+                                    <img src="/assets/img/appstore.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-auto mt-3">
+                                <a href="/">
+                                    <img src="/assets/img/appstore.svg" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-7 d-flex justify-content-center align-items-center " id="heropic">
+                        <div class="circle  justify-content-center">
+
+                        </div>
+                        <div class="img-phone">
+                            <img src="/assets/img/phone-screen-1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--TESTIMONİAL-->
+
+        <div class="testimonial-container  pt-4 mt-4">
+            <div class="container py-3">
+                <div class="row align-content-center justify-content-center">
+                    <h2 class="fw-semibold text-white text-center px-5">
+                        "An intuitive solution to a common problem that we all face, wrapped up in a single app!"
+                    </h2>
+                    <div class="container text-center py-3">
+                        <img src="/assets/img/google.svg" class=" img-fluid" width="10%" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--Features -->
+    <div class="feat-container  py-5 px-5" id="Features">
+        <div class="container">
+            <div class="row justify-content-center align-items-center gx-5">
+
+                <div class="col-lg-4 col-12 col-md-6 order-lg-last justify-content-center d-flex align-items-center ">
+                    <div class="featcircle d-none d-lg-block d-flex justify-content-center align-items-center">
+
+                    </div>
+                    <div class="div">
+                        <img src="/assets/img/phone-screen-1.png"
+                            class="phone justify-content-center d-flex align-items-center " alt="">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8 col-12 order-lg-first py-5 px-5">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-12 col-md-6  mt-4 text-center">
+                            <div class="div">
+                                <i class="bi bi-phone icon-color text-center fs-1"></i>
+                                <h2 class="fw-semibold">Device Mockups</h2>
+                                <p class="lead">
+                                    Ready to use HTML/CSS device mockups, no Photoshop required!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-4  text-center">
+                            <div class="div">
+                                <i class="bi bi-phone icon-color text-center fs-1"></i>
+                                <h2 class="fw-semibold">Device Mockups</h2>
+                                <p class="lead">
+                                    Ready to use HTML/CSS device mockups, no Photoshop required!
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 mt-4  text-center">
+                            <div class="div">
+                                <i class="bi bi-phone icon-color fs-1"></i>
+                                <h2 class="fw-semibold">Device Mockups</h2>
+                                <p class="lead">
+                                    Ready to use HTML/CSS device mockups, no Photoshop required!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6  mt-4  text-center">
+                            <div class="div">
+                                <i class="bi bi-phone icon-color fs-1"></i>
+                                <h2 class="fw-semibold">Device Mockups</h2>
+                                <p class="lead">
+                                    Ready to use HTML/CSS device mockups, no Photoshop required!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DESIGN-->
+    <div class="design-container bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-evenly align-items-center">
+                <div class="col-lg-4">
+                    <div class="div">
+                        <h3 class="fw-light display-1 fs-1 text-center">
+                            Enter a new age of web design
+                        </h3>
+                        <p class="lead text-center">
+                            This section is perfect for featuring some information about your application, why it was
+                            built,
+                            the problem it solves, or anything else! There's plenty of space for text here, so don't
+                            worry
+                            about writing too much.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-8">
+                    <div class="div">
+                        <img src="/assets/img/900x900-1.jpg" class="img-fluid rounded-circle" width="80%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--CALL-->
+    <div class="div-call  p-5" id="Download">
+        <div class="call-bg">
+            <div class="overlay"></div>
+            <div class="content">
+                <h4 class="fw-light display-1 pt-5 fs-1 text-white-50 mt-3">Stop waiting. <br>
+                    Start building.</h4>
+                <div class="div">
+                    <a href="/">
+                        <button class="btn btn-primary rounded-5 text-white-50 btn-lg mt-5">
+                            DOWNLOAD For Free
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--GETtheAPP-->
+
+    <div class="div-app">
+        <div class="container">
+            <div class="row px-5 py-5">
+                <h4 class="fw-bold text-center text-white-50 mt-3">
+                    GET THE APP
+                </h4>
+
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <img src="/assets/img/appstore.svg" alt="">
+                    </div>
+                    <div class="col-auto">
+                        <img src="/assets/img/appstore.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <div class="footer-container p-3">
+        <div class="container text-center px-5">
+            <div class="row justify-content-center">
+                <small class="text-white fw-bold">
+                    © 2023 IPHONE. All rights reserved.
+                </small>
+
+                <div class="div text-white-50 mt-3">
+                    <a href="" class="text-decoration-none">
+                        <small class="text-white fw-light">Privacy</small>
+                    </a>
+                    <span>&</span>
+                    <a href="" class="text-decoration-none"><small class="text-white fw-light">Terms</small>
+                    </a>
+                    <span>&</span>
+                    <a href="" class="text-decoration-none"><small class="text-white fw-light"> FAQ</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
